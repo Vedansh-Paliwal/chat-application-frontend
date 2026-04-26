@@ -101,10 +101,10 @@ export const JoinCreateChat = () => {
                         />
                     </div>
                     <div className={`${styles.formGroup} ${styles.buttonStyles}`}>
-                        <button disabled={joinRoomLoading} type="button" onClick={handleJoinRoom} className={styles.joinButton}>
+                        <button disabled={joinRoomLoading || createRoomLoading} type="button" onClick={handleJoinRoom} className={styles.joinButton}>
                             {joinRoomLoading ? "Joining Room..." : "Join Room"}
                         </button>
-                        <button disabled={createRoomLoading} type="button" onClick={handleCreateRoom} className={styles.createButton}>
+                        <button disabled={createRoomLoading || joinRoomLoading} type="button" onClick={handleCreateRoom} className={styles.createButton}>
                             {createRoomLoading ? "Creating..." : "Create Room"}
                         </button>
                     </div>
