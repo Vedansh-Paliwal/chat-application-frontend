@@ -1,0 +1,116 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.card {
+    background-color: #111827;
+    padding: 2rem;
+    width: 100%;
+    max-width: 28rem;
+    border-radius: 12px;
+    border: 0.5px solid #374151;
+}
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chatIcon {
+    width: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.heading {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.buttonStyles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.formGroup label {
+    font-weight: 300;
+    color: #e1e1e1;
+}
+.formGroup input {
+    background: #1f2937;
+    border: 0.5px solid #4b5563;
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    color: #f9fafb;
+    font-size: 14px;
+    width: 100%;
+    outline: none;
+}
+.formGroup input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+.joinButton {
+    padding: 0.6rem 1rem;
+    background: #1d4ed8;
+    color: #eff6ff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.joinButton:hover {
+    background: #1e40af;
+}
+.createButton {
+    padding: 0.6rem 1rem;
+    background: #15803d;
+    color: #f0fdf4;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.createButton:hover {
+    background: #166534;
+}
+.required {
+    color: red;
+}
+.error {
+    color: #ef4444;
+    font-size: 13px;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    /* this runs on screens LESSER than 768px */
+    .container {
+        padding: 2rem;
+    }
+    .createButton {
+        padding: 0.5rem 0.8rem;
+        font-size: 10px;
+        font-weight: 300;
+    }
+    .joinButton {
+        padding: 0.5rem 0.8rem;
+        font-size: 10px;
+        font-weight: 300;
+    }
+}
